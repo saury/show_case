@@ -15,7 +15,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "rm -rf docs & gatsby build",
+    "build": "rm -rf docs & gatsby build --prefix-paths",
     "postbuild": "mv public docs",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
