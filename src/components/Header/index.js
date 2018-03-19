@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = () => (
+const Header = (props) => (
   <div
     style={{
       background: 'rebeccapurple',
@@ -17,13 +17,13 @@ const Header = () => (
     >
       <h1 style={{ margin: 0 }}>
         <Link
-          to="/"
+          to={props.link}
           style={{
             color: 'white',
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          {props.title}
         </Link>
       </h1>
     </div>
