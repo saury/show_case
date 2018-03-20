@@ -16,7 +16,7 @@ const EatPage = () => (
                 background: '#f2f2f2',
                 borderBottom: '1px solid #ccc'
             }}>
-                <ol style={{ margin: '0 24px', fontSize: '13px' }}>
+                <ol style={{ margin: '0 16px', fontSize: '13px' }}>
                     <li style={{ display: 'inline-block', margin: '0 8px' }}><a href="#cnt_1">#沙茶面</a></li>
                     <li style={{ display: 'inline-block', margin: '0 8px' }}><a href="#cnt_2">#海鲜大餐</a></li>
                     <li style={{ display: 'inline-block', margin: '0 8px' }}><a href="#cnt_3">#海蛎煎</a></li>
