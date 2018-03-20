@@ -25,25 +25,35 @@ const IndexPage = () => (
           <Link to="/flight/">飞行须知</Link>
         </li>
         <li>
+          <Link to="/eat/">提前知道，有关吃什么</Link>
+        </li>
+        <li>
           <Link to="/day-1/">第1天</Link>
         </li>
-        <p>持续构建中。。。</p>
-        {/* <li>
-          <Link to="/day-2/">第2天</Link>
+        <li>
+          <Link
+            // to="/day-2/"
+            to="/"
+            style={{ color: "#ccc" }}>第2天</Link>
         </li>
         <li>
-          <Link to="/day-3/">第3天</Link>
+          <Link
+            // to="/day-3/"
+            to="/"
+            style={{ color: "#ccc" }}
+          >第3天</Link>
         </li>
         <li>
-          <Link to="/day-4/">第4天</Link>
-        </li> */}
-        <li>
-          <Link to="/eat/">有关吃什么</Link>
+          <Link
+            // to="/day-4/"
+            to="/"
+            style={{ color: "#ccc" }}
+          >第4天</Link>
         </li>
       </ul>
     </div>
 
-  </div>
+  </div >
 )
 
 export default IndexPage
