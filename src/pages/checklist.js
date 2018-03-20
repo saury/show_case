@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
 import Header from '../components/Header/index'
+const windowGlobal = typeof window !== 'undefined' && window;
 
 let todoList;
-const ls = window.localStorage;
+const localStorage = windowGlobal.localStorage;
+
 let initData = {
     "todoList": [
         { "name": "身份证", "finished": false },
@@ -29,10 +31,10 @@ let initData = {
 };
 
 // try read list from ls
-var storedList = ls.getItem('todo');
+var storedList = localStorage && localStorage.getItem && localStorage.getItem('todo');
 if (!storedList) {
     todoList = initData.todoList;
-    ls.setItem('todo', JSON.stringify(initData));
+    localStorage && localStorage.setItem && localStorage.setItem('todo', JSON.stringify(initData));
 }
 else {
     todoList = JSON.parse(storedList).todoList;
@@ -52,7 +54,7 @@ class Notify extends Component {
         let resultList = [...todoList];
         resultList[idx].finished = !resultList[idx].finished;
         this.setState({ todoList: resultList });
-        ls.setItem('todo', JSON.stringify({ todoList: resultList }));
+        localStorage && localStorage.setItem && localStorage.setItem('todo', JSON.stringify({ todoList: resultList }));
     }
 
     render() {

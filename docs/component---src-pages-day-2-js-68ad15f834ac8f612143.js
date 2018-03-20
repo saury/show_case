@@ -1,0 +1,2 @@
+webpackJsonp([79321146679812],{202:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var n=a(2),u=l(n),c=a(12),d=(l(c),a(10)),r=l(d),f=function(){return u.default.createElement("div",{className:"container"},u.default.createElement(r.default,{title:"第二天",back:"/"}),u.default.createElement("div",{className:"content"},u.default.createElement("h1",null,"构建中...")))};t.default=f,e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-day-2-js-68ad15f834ac8f612143.js.map
