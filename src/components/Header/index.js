@@ -3,29 +3,47 @@ import Link from 'gatsby-link'
 
 const Header = (props) => (
   <div
+    className="header"
     style={{
       background: 'rebeccapurple',
-      marginBottom: '1.45rem',
     }}
   >
     <div
       style={{
         margin: '0 auto',
         maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        color: 'white',
+        textDecoration: 'none',
+        // padding: '1.45rem 1.0875rem',
+        height: '60px',
+        textAlign: 'center',
+        position: 'relative'
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <small style={{
+        display: props.back ? 'inline-block' : 'none',
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        lineHeight: '60px',
+        paddingLeft: '24px'
+      }}>
         <Link
-          to={props.link}
+          to='/'
           style={{
             color: 'white',
             textDecoration: 'none',
           }}
         >
-          {props.title}
+          BACK
         </Link>
-      </h1>
+      </small>
+      <h3 style={{
+        margin: 0,
+        lineHeight: '60px'
+      }}>
+        {props.title}
+      </h3>
     </div>
   </div>
 )
