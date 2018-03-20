@@ -9,10 +9,10 @@ import './global.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="厦门游"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: '厦门游' },
+        { name: 'keywords', content: '厦门游' },
       ]}
     />
     <div
