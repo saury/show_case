@@ -29,7 +29,7 @@ const Header = (props) => (
         paddingLeft: '24px'
       }}>
         <Link
-          to='/'
+          to={props.back}
           style={{
             color: 'white',
             textDecoration: 'none',

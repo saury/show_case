@@ -10,7 +10,7 @@ let initData = {
         { "name": "身份证", "finished": false },
         { "name": "银行卡", "finished": false },
         { "name": "充电器", "finished": false },
-        { "name": "充电宝", "finished": false },
+        { "name": "充电宝(容量小于等于10000毫安)", "finished": false },
         { "name": "杯子", "finished": false },
         { "name": "雨伞", "finished": false },
         { "name": "毛巾", "finished": false },
@@ -82,7 +82,7 @@ class Notify extends Component {
 
         return (
             <div className="container">
-                <Header title="出行清单" back />
+                <Header title="出行清单" back='/' />
                 <div className="content">
                     <p style={{
                         marginBottom: '8px'

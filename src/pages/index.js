@@ -27,7 +27,8 @@ const IndexPage = () => (
         <li>
           <Link to="/day-1/">第1天</Link>
         </li>
-        <li>
+        <p>持续构建中。。。</p>
+        {/* <li>
           <Link to="/day-2/">第2天</Link>
         </li>
         <li>
@@ -35,10 +36,10 @@ const IndexPage = () => (
         </li>
         <li>
           <Link to="/day-4/">第4天</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link to="/eat/">有关吃什么</Link>
-        </li>
+        </li> */}
       </ul>
     </div>
 

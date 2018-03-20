@@ -4,8 +4,8 @@ import Link from 'gatsby-link'
 import Header from '../components/Header/index'
 
 const FlightPage = () => (
-    <div>
-        <Header title="飞行须知" back />
+    <div className="container">
+        <Header title="飞行须知" back='/' />
         <div className="content">
             <ol style={{
                 margin: '0 24px'
