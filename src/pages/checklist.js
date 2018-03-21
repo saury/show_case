@@ -17,6 +17,8 @@ let initData = {
         { "name": "雨伞", "finished": false },
         { "name": "毛巾", "finished": false },
         { "name": "牙刷", "finished": false },
+        { "name": "防晒霜", "finished": false },
+        { "name": "化妆品", "finished": false },
         { "name": "纸巾", "finished": false },
         { "name": "姨妈巾", "finished": false },
         { "name": "太阳镜", "finished": false },
