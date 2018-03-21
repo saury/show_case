@@ -5,7 +5,7 @@ import Header from '../components/Header/index'
 
 const DayThree = () => (
     <div className="container">
-        <Header title="第三天" back />
+        <Header title="第三天" back='/' />
         <div className="content">
             <h1>构建中...</h1>
         </div>

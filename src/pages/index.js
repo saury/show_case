@@ -42,7 +42,7 @@ const IndexPage = () => (
       尽管略显粗糙，但也是每每聊至你睡了，才开始这个项目。<br />望对你有所帮助，午夜迎风，想你……
     </footer>
     <div className="content">
-      <p>{welcomeText}</p>
+      <p>姣，{welcomeText}</p>
       {/* weather info */}
       {weather[weatherIdx] && <p>
         <strong>{weather[weatherIdx].info}</strong>
