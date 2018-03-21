@@ -8,6 +8,7 @@ let todoList;
 const localStorage = windowGlobal.localStorage;
 
 let initData = {
+    "todoListVersion": 1,
     "todoList": [
         { "name": "身份证", "finished": false },
         { "name": "银行卡", "finished": false },
@@ -41,9 +42,11 @@ let initData = {
 
 // try read list from ls
 var storedList = localStorage && localStorage.getItem && localStorage.getItem('todo');
-if (!storedList) {
+var storedVersion = localStorage && localStorage.getItem && localStorage.getItem('todoVersion');
+if (!storedList || parseInt(storedVersion) !== parseInt(initData.todoListVersion)) {
     todoList = initData.todoList;
     localStorage && localStorage.setItem && localStorage.setItem('todo', JSON.stringify(initData));
+    localStorage && localStorage.setItem && localStorage.setItem('todoVersion', initData.todoListVersion);
 }
 else {
     todoList = JSON.parse(storedList).todoList;
