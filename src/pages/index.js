@@ -66,9 +66,8 @@ const IndexPage = () => (
         </li>
         <li>
           <Link
-            // to="/day-2/"
-            to="/"
-            style={{ color: "#ccc" }}>第2天</Link>
+            to="/day-2/"
+          >第2天</Link>
         </li>
         <li>
           <Link
