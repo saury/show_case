@@ -20,24 +20,25 @@ const Header = (props) => (
         position: 'relative'
       }}
     >
-      <small style={{
-        display: props.back ? 'inline-block' : 'none',
-        position: 'absolute',
-        left: 0,
-        top: 0,
-        lineHeight: '60px',
-        paddingLeft: '24px'
-      }}>
-        <Link
-          to={props.back}
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          BACK
+      {props.back &&
+        <small style={{
+          position: 'absolute',
+          left: 0,
+          top: 0,
+          lineHeight: '60px',
+          paddingLeft: '24px'
+        }}>
+          <Link
+            to={props.back}
+            style={{
+              color: 'white',
+              textDecoration: 'none',
+            }}
+          >
+            BACK
         </Link>
-      </small>
+        </small>
+      }
       <h3 style={{
         margin: 0,
         lineHeight: '60px'
