@@ -18,17 +18,24 @@ let initData = {
         { "name": "毛巾", "finished": false },
         { "name": "牙刷", "finished": false },
         { "name": "防晒霜", "finished": false },
-        { "name": "化妆品", "finished": false },
+        { "name": "面膜", "finished": false },
+        { "name": "护肤品", "finished": false },
+        { "name": "卸妆水", "finished": false },
         { "name": "纸巾", "finished": false },
         { "name": "姨妈巾", "finished": false },
+        { "name": "隐形眼镜", "finished": false },
         { "name": "太阳镜", "finished": false },
-        { "name": "帽子", "finished": false },
+        { "name": "睡衣", "finished": false },
+        { "name": "内衣", "finished": false },
         { "name": "长袖", "finished": false },
         { "name": "长裤", "finished": false },
         { "name": "短袖", "finished": false },
         { "name": "中裤or裙子", "finished": false },
+        { "name": "长袜子", "finished": false },
+        { "name": "短袜子", "finished": false },
+        { "name": "帽子", "finished": false },
         { "name": "拖鞋", "finished": false },
-        { "name": "运动鞋", "finished": false }
+        { "name": "运动鞋", "finished": false },
     ]
 };
 
