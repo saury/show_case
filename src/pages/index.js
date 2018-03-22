@@ -45,12 +45,13 @@ const IndexPage = () => (
       <p>姣，{welcomeText}</p>
       {/* weather info */}
       {weather[weatherIdx] && <p>
-        <strong>{weather[weatherIdx].info}</strong>
+        {weather[weatherIdx].info}
         <br />
         <span style={{ color: '#666' }}>
           {weather[weatherIdx].sun}
         </span>
       </p>}
+      <p><strong>注意保暖！注意保暖！注意保暖！重要的事说三遍</strong></p>
       <ul>
         <li>
           <Link to="/checklist/">出行清单</Link>
@@ -71,9 +72,9 @@ const IndexPage = () => (
         </li>
         <li>
           <Link
-            // to="/day-3/"
-            to="/"
-            style={{ color: "#ccc" }}
+            to="/day-3/"
+          // to="/"
+          // style={{ color: "#ccc" }}
           >第3天</Link>
         </li>
         <li>
