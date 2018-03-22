@@ -6,10 +6,10 @@ import Header from '../components/Header/index'
 const startDay = 1 // set start up date for showing the actived style of the sheet
   , currentDate = new Date()
   , weather = [
-    { info: '今天天气晴好，温度12-19°C，空气质量良好', sun: '今夜日落时间18:18，明日日出时间6:08' },
-    { info: '今天天气晴好，温度14-22°C，空气质量良好', sun: '今夜日落时间18:18，明日日出时间6:08' },
-    { info: '今天天气晴好，温度15-23°C，空气质量良好', sun: '今夜日落时间18:18，明日日出时间6:08' },
-    { info: '今天天气晴好，温度16-23°C，空气质量良好', sun: '今夜日落时间18:18，明日日出时间6:08' }
+    { info: '今天厦门天气晴好，温度12-19°C，空气质量良好', sun: '今夜日落时间18:18，明日日出时间6:08' },
+    { info: '今天厦门天气晴好，温度14-22°C，空气质量良好', sun: '今夜日落时间18:18，明日日出时间6:08' },
+    { info: '今天厦门天气晴好，温度15-23°C，空气质量良好', sun: '今夜日落时间18:18，明日日出时间6:08' },
+    { info: '今天厦门天气晴好，温度16-23°C，空气质量良好', sun: '上海天气可能有雨，温度11-19°C，回来记得备伞，记得穿厚实点~' },
   ]
   ;
 
@@ -73,15 +73,11 @@ const IndexPage = () => (
         <li>
           <Link
             to="/day-3/"
-          // to="/"
-          // style={{ color: "#ccc" }}
           >第3天</Link>
         </li>
         <li>
           <Link
-            // to="/day-4/"
-            to="/"
-            style={{ color: "#ccc" }}
+            to="/day-4/"
           >第4天</Link>
         </li>
       </ul>
