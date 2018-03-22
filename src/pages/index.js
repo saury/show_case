@@ -80,6 +80,9 @@ const IndexPage = () => (
             to="/day-4/"
           >第4天</Link>
         </li>
+        <li>
+          <Link to="/checklist_back/">回程清单</Link>
+        </li>
       </ul>
     </div>
 
