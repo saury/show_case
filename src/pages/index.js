@@ -39,19 +39,20 @@ const IndexPage = () => (
   <div>
     <Header title="厦门游" />
     <footer className="footer">
-      尽管略显粗糙，但也是每每聊至你睡了，才开始这个项目。<br />望对你有所帮助，午夜迎风，想你……
+      尽管略显粗糙，但也是每每聊至你睡了，才开始这个项目。
+      {/* <br />望对你有所帮助，午夜迎风，想你…… */}
     </footer>
     <div className="content">
-      <p>姣，{welcomeText}</p>
+      {/* <p>姣，{welcomeText}</p> */}
       {/* weather info */}
-      {weather[weatherIdx] && <p>
+      {/* {weather[weatherIdx] && <p>
         {weather[weatherIdx].info}
         <br />
         <span style={{ color: '#666' }}>
           {weather[weatherIdx].sun}
         </span>
-      </p>}
-      <p><strong>注意保暖！注意保暖！注意保暖！重要的事说三遍</strong></p>
+      </p>} */}
+      {/* <p><strong>注意保暖！注意保暖！注意保暖！重要的事说三遍</strong></p> */}
       <ul>
         <li>
           <Link to="/checklist/">出行清单</Link>
