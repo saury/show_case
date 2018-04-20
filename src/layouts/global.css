@@ -26,7 +26,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     padding: 12px 24px;
-    -webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch;
 }
 
 .footer {
@@ -46,10 +46,10 @@ body {
     padding-right: 24px;
 }
 
-.header~.content {
+.header ~ .content {
     top: 60px;
 }
 
-.footer~.content {
+.footer ~ .content {
     bottom: 40px;
 }

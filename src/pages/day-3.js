@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import Header from '../components/Header/index'
+import Header from '../components/Header/index';
 
 const img1 = require('../images/day3/1.jpg');
 const img2 = require('../images/day3/2.jpg');
@@ -10,11 +10,15 @@ const img4 = require('../images/day3/4.jpg');
 
 const DayThree = () => (
     <div className="container">
-        <Header title="第三天" back='/' />
+        <Header title="第三天" back="/" />
         <div className="content">
-            <p>『白城沙滩——厦门大学——沙坡尾——猫街——钟鼓索道——环岛路』这是你们的行程安排，我看了下，总体安排的还是不错的，我就不画蛇添足另提想法啦。</p>
+            <p>
+                『白城沙滩——厦门大学——沙坡尾——猫街——钟鼓索道——环岛路』这是你们的行程安排，我看了下，总体安排的还是不错的，我就不画蛇添足另提想法啦。
+            </p>
             <img style={{ marginBottom: '8px', display: 'block' }} src={img1} />
-            <small style={{ marginBottom: '8px', textAlign: 'center', display: 'block' }}>（路线，总共大致步行5公里）</small>
+            <small style={{ marginBottom: '8px', textAlign: 'center', display: 'block' }}>
+                （路线，总共大致步行5公里）
+            </small>
             <p>当然，还是需要提及一些要点的：</p>
             <h4>白城沙滩</h4>
             <ol>
@@ -24,8 +28,12 @@ const DayThree = () => (
             <ol>
                 <li>厦门大学貌似是要押身份证的，以防万一还是不要忘记带。</li>
                 <li>厦大芙蓉隧道拉风的涂鸦墙不要错过，充满了青春的味道，亮点是消防龙头，自行寻找体会……</li>
-                <li>厦大芙蓉餐厅建议品尝下，没记错的话只有3楼可以用现金。不管味道怎么样，但多少会让人回想到读大学时学校食堂的味道。</li>
-                <li>校内或者附近的书店里可以买本喜欢的书（如果这次出门没带书的话），至于原因呢，回程8小时动车呢，没书看你说多无聊？</li>
+                <li>
+                    厦大芙蓉餐厅建议品尝下，没记错的话只有3楼可以用现金。不管味道怎么样，但多少会让人回想到读大学时学校食堂的味道。
+                </li>
+                <li>
+                    校内或者附近的书店里可以买本喜欢的书（如果这次出门没带书的话），至于原因呢，回程8小时动车呢，没书看你说多无聊？
+                </li>
             </ol>
             <img style={{ marginBottom: '8px', display: 'block' }} src={img2} />
             <small style={{ marginBottom: '8px', textAlign: 'center', display: 'block' }}>（涂鸦墙）</small>
@@ -48,6 +56,6 @@ const DayThree = () => (
             </p>
         </div>
     </div>
-)
+);
 
-export default DayThree
+export default DayThree;
