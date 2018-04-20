@@ -20,12 +20,12 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "npm run clean && gatsby build --prefix-paths",
-    "postbuild": "mv public docs",
+    "build": " gatsby build --prefix-paths",
+    "postbuild": "npm run clean && mv public/**/* .",
     "start": "gatsby develop",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,json,md}\"",
     "test": "jest",
-    "clean": "rimraf docs"
+    "clean": "rimraf src jest"
   },
   "devDependencies": {
     "prettier": "^1.11.1",
