@@ -25,7 +25,7 @@
     "start": "gatsby develop",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,json,md}\"",
     "test": "jest",
-    "clean": "rimraf src jest"
+    "clean": "rimraf src jest public"
   },
   "devDependencies": {
     "prettier": "^1.11.1",
