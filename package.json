@@ -9,6 +9,7 @@
     "gatsby-plugin-google-analytics": "^1.0.24",
     "gatsby-plugin-react-helmet": "^2.0.6",
     "gh-pages": "^1.1.0",
+    "jest": "^22.4.3",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -23,11 +24,27 @@
     "postbuild": "mv public docs",
     "start": "gatsby develop",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,json,md}\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "clean": "rimraf docs"
   },
   "devDependencies": {
     "prettier": "^1.11.1",
     "rimraf": "^2.6.2"
-  }
+  },
+  "jest": {
+    "setupFiles": [
+        "./jest/mocks.js"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(spec|test))\\.jsx?$",
+    "moduleDirectories": [
+        "node_modules",
+        "src"
+    ],
+    "testPathIgnorePatterns": ["<rootDir>/\\.cache/", "<rootDir>/node_modules/"],
+    "moduleFileExtensions": [
+        "ts",
+        "tsx",
+        "js"
+    ]
+}
 }
