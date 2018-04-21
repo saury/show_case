@@ -3,9 +3,13 @@ language: node_js
 node_js:
   - "node"
 
+sudo: required
+
 cache:
   directories:
     - "node_modules"
+
+script: npm run build
 
 deploy:
   provider: pages
