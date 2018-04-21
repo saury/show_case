@@ -20,8 +20,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": " gatsby build --prefix-paths",
-    "postbuild": "mv public/**/* . && npm run clean",
+    "build": " gatsby build --prefix-paths && mv public/**/* .",
+    "postbuild": "npm run clean",
     "start": "gatsby develop",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,json,md}\"",
     "test": "jest",
