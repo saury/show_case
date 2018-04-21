@@ -41,6 +41,7 @@ const IndexPage = () => (
         <Header title="厦门游" />
         <footer className="footer">
             尽管略显粗糙，但也是每每聊至你睡了，才开始这个项目。
+            <small>By Jin</small>
             {/* <br />望对你有所帮助，午夜迎风，想你…… */}
         </footer>
         <div className="content">
