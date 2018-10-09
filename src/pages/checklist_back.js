@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
 
 import Header from '../components/Header/index';
 const windowGlobal = typeof window !== 'undefined' && window;
@@ -41,9 +40,9 @@ let initData = {
 };
 
 // try read list from ls
-var storedList =
+let storedList =
   localStorage && localStorage.getItem && localStorage.getItem('backlist');
-var storedVersion =
+let storedVersion =
   localStorage &&
   localStorage.getItem &&
   localStorage.getItem('backlistVersion');
@@ -63,14 +62,14 @@ if (
 }
 
 class NotifyBack extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
       backList: backList,
     };
   }
 
-  changeHandler = (idx) => {
+  changeHandler = idx => {
     // this.props.tabOnClick && this.props.tabOnClick(evt, value);
     let resultList = [...backList];
     resultList[idx].finished = !resultList[idx].finished;
@@ -79,11 +78,11 @@ class NotifyBack extends Component {
       localStorage.setItem &&
       localStorage.setItem(
         'backlist',
-        JSON.stringify({ backList: resultList }),
+        JSON.stringify({ backList: resultList })
       );
   };
 
-  render() {
+  render () {
     let list = backList.map((li, idx) => {
       return (
         <li

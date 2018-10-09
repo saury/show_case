@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
 
 import Header from '../components/Header/index';
 const windowGlobal = typeof window !== 'undefined' && window;
@@ -41,9 +40,9 @@ let initData = {
 };
 
 // try read list from ls
-var storedList =
+let storedList =
   localStorage && localStorage.getItem && localStorage.getItem('todo');
-var storedVersion =
+let storedVersion =
   localStorage && localStorage.getItem && localStorage.getItem('todoVersion');
 if (
   !storedList ||
@@ -61,14 +60,14 @@ if (
 }
 
 class Notify extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
       todoList: todoList,
     };
   }
 
-  changeHandler = (idx) => {
+  changeHandler = idx => {
     // this.props.tabOnClick && this.props.tabOnClick(evt, value);
     let resultList = [...todoList];
     resultList[idx].finished = !resultList[idx].finished;
@@ -78,7 +77,7 @@ class Notify extends Component {
       localStorage.setItem('todo', JSON.stringify({ todoList: resultList }));
   };
 
-  render() {
+  render () {
     let list = todoList.map((li, idx) => {
       return (
         <li
