@@ -1,15 +1,15 @@
 import React from 'react';
 
-import Header from '../components/Header/index';
+import Header from '../../components/Header/index';
 
-const img1 = require('../images/day3/1.jpg');
-const img2 = require('../images/day3/2.jpg');
-const img3 = require('../images/day3/3.jpg');
-const img4 = require('../images/day3/4.jpg');
+const img1 = require('../../images/xiamen/day3/1.jpg');
+const img2 = require('../../images/xiamen/day3/2.jpg');
+const img3 = require('../../images/xiamen/day3/3.jpg');
+const img4 = require('../../images/xiamen/day3/4.jpg');
 
 const DayThree = () => (
   <div className="container">
-    <Header title="第三天" back="/" />
+    <Header title="第三天" back="/xiamen/" />
     <div className="content">
       <p>
         『白城沙滩——厦门大学——沙坡尾——猫街——钟鼓索道——环岛路』这是你们的行程安排，我看了下，总体安排的还是不错的，我就不画蛇添足另提想法啦。

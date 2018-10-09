@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Header from '../components/Header/index';
+import Header from '../../components/Header/index';
 
-const img1 = require('../images/qilou.jpg');
+const img1 = require('../../images/xiamen/qilou.jpg');
 
 const DayFour = () => (
   <div className="container">
-    <Header title="第四天" back="/" />
+    <Header title="第四天" back="/xiamen/" />
     <div className="content">
       <p>
         最后一天啦，返程的一天。想必昨天玩的很累睡到很晚才醒吧。退房的时候不要遗漏物品。

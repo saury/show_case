@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../components/Header/index';
+import Header from '../../components/Header/index';
 
 const Story3 = () => (
   <div className="container">

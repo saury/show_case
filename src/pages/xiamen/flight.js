@@ -1,11 +1,11 @@
 import React from 'react';
 // import Link from 'gatsby-link';
 
-import Header from '../components/Header/index';
+import Header from '../../components/Header/index';
 
 const FlightPage = () => (
   <div className="container">
-    <Header title="飞行须知" back="/" />
+    <Header title="飞行须知" back="/xiamen/" />
     <div className="content">
       <ol
         style={{

@@ -1,20 +1,20 @@
 import React from 'react';
 
-import Header from '../components/Header/index';
-const img1 = require('../images/eat/1.jpg');
-const img2 = require('../images/eat/2.jpg');
-const img3 = require('../images/eat/3.jpg');
-const img4 = require('../images/eat/4.jpg');
-const img5 = require('../images/eat/5.jpg');
-const img6 = require('../images/eat/6.jpg');
-const img7 = require('../images/eat/7.jpg');
-const img8 = require('../images/eat/8.jpg');
-const img9 = require('../images/eat/9.jpg');
-const img10 = require('../images/eat/10.jpg');
+import Header from '../../components/Header/index';
+const img1 = require('../../images/xiamen/eat/1.jpg');
+const img2 = require('../../images/xiamen/eat/2.jpg');
+const img3 = require('../../images/xiamen/eat/3.jpg');
+const img4 = require('../../images/xiamen/eat/4.jpg');
+const img5 = require('../../images/xiamen/eat/5.jpg');
+const img6 = require('../../images/xiamen/eat/6.jpg');
+const img7 = require('../../images/xiamen/eat/7.jpg');
+const img8 = require('../../images/xiamen/eat/8.jpg');
+const img9 = require('../../images/xiamen/eat/9.jpg');
+const img10 = require('../../images/xiamen/eat/10.jpg');
 
 const EatPage = () => (
   <div className="container">
-    <Header title="有关吃什么" back="/" />
+    <Header title="有关吃什么" back="/xiamen/" />
     <div className="content">
       <nav
         style={{

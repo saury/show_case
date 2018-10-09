@@ -1,16 +1,16 @@
 import React from 'react';
 
-import Header from '../components/Header/index';
+import Header from '../../components/Header/index';
 
-const img1 = require('../images/day2/1.jpg');
-const img2 = require('../images/day2/2.jpg');
-const img3 = require('../images/day2/3.jpg');
-const img4 = require('../images/day2/4.jpg');
-const img5 = require('../images/day2/5.jpg');
+const img1 = require('../../images/xiamen/day2/1.jpg');
+const img2 = require('../../images/xiamen/day2/2.jpg');
+const img3 = require('../../images/xiamen/day2/3.jpg');
+const img4 = require('../../images/xiamen/day2/4.jpg');
+const img5 = require('../../images/xiamen/day2/5.jpg');
 
 const DayTwo = () => (
   <div className="container">
-    <Header title="第二天" back="/" />
+    <Header title="第二天" back="/xiamen/" />
     <div className="content">
       <h4>
         鼓浪屿：

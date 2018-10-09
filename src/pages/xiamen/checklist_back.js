@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-import Header from '../components/Header/index';
+import Header from '../../components/Header/index';
 const windowGlobal = typeof window !== 'undefined' && window;
 
-let todoList;
+let backList;
 const localStorage = windowGlobal.localStorage;
 
 let initData = {
-  todoListVersion: 1,
-  todoList: [
+  backListVersion: 1,
+  backList: [
     { name: '身份证', finished: false },
     { name: '银行卡', finished: false },
     { name: '充电器', finished: false },
@@ -41,44 +41,49 @@ let initData = {
 
 // try read list from ls
 let storedList =
-  localStorage && localStorage.getItem && localStorage.getItem('todo');
+  localStorage && localStorage.getItem && localStorage.getItem('backlist');
 let storedVersion =
-  localStorage && localStorage.getItem && localStorage.getItem('todoVersion');
+  localStorage &&
+  localStorage.getItem &&
+  localStorage.getItem('backlistVersion');
 if (
   !storedList ||
-  parseInt(storedVersion) !== parseInt(initData.todoListVersion)
+  parseInt(storedVersion) !== parseInt(initData.backListVersion)
 ) {
-  todoList = initData.todoList;
+  backList = initData.backList;
   localStorage &&
     localStorage.setItem &&
-    localStorage.setItem('todo', JSON.stringify(initData));
+    localStorage.setItem('backlist', JSON.stringify(initData));
   localStorage &&
     localStorage.setItem &&
-    localStorage.setItem('todoVersion', initData.todoListVersion);
+    localStorage.setItem('backlistVersion', initData.backListVersion);
 } else {
-  todoList = JSON.parse(storedList).todoList;
+  backList = JSON.parse(storedList).backList;
 }
 
-class Notify extends Component {
+class NotifyBack extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      todoList: todoList,
+      backList: backList,
     };
   }
 
   changeHandler = idx => {
     // this.props.tabOnClick && this.props.tabOnClick(evt, value);
-    let resultList = [...todoList];
+    let resultList = [...backList];
     resultList[idx].finished = !resultList[idx].finished;
-    this.setState({ todoList: resultList });
+    this.setState({ backList: resultList });
     localStorage &&
       localStorage.setItem &&
-      localStorage.setItem('todo', JSON.stringify({ todoList: resultList }));
+      localStorage.setItem(
+        'backlist',
+        JSON.stringify({ backList: resultList })
+      );
   };
 
   render () {
-    let list = todoList.map((li, idx) => {
+    let list = backList.map((li, idx) => {
       return (
         <li
           key={idx}
@@ -105,14 +110,14 @@ class Notify extends Component {
 
     return (
       <div className="container">
-        <Header title="出行清单" back="/" />
+        <Header title="回程清单" back="/xiamen/" />
         <div className="content">
           <p
             style={{
               marginBottom: '8px',
             }}
           >
-            列出了依我所见比较重要的项目，可以借此排查下有无遗漏物件：
+            出行清单的副本，检查一下有无遗漏在客房吧：
           </p>
           <ul
             style={{
@@ -128,4 +133,4 @@ class Notify extends Component {
   }
 }
 
-export default Notify;
+export default NotifyBack;
