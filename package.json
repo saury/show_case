@@ -4,12 +4,14 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.223",
-    "gatsby-link": "^1.6.38",
-    "gatsby-plugin-google-analytics": "^1.0.24",
-    "gatsby-plugin-react-helmet": "^2.0.6",
-    "gh-pages": "^1.1.0",
-    "jest": "^22.4.3",
+    "gatsby": "^2.0.19",
+    "gatsby-link": "^2.0.4",
+    "gatsby-plugin-google-analytics": "^2.0.6",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gh-pages": "^2.0.1",
+    "jest": "^23.6.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -33,18 +35,21 @@
   },
   "jest": {
     "setupFiles": [
-        "./jest/mocks.js"
+      "./jest/mocks.js"
     ],
     "testRegex": "(/__tests__/.*|(\\.|/)(spec|test))\\.jsx?$",
     "moduleDirectories": [
-        "node_modules",
-        "src"
+      "node_modules",
+      "src"
     ],
-    "testPathIgnorePatterns": ["<rootDir>/\\.cache/", "<rootDir>/node_modules/"],
+    "testPathIgnorePatterns": [
+      "<rootDir>/\\.cache/",
+      "<rootDir>/node_modules/"
+    ],
     "moduleFileExtensions": [
-        "ts",
-        "tsx",
-        "js"
+      "ts",
+      "tsx",
+      "js"
     ]
-}
+  }
 }

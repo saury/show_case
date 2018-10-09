@@ -1,3 +1,3 @@
 test('dummy', () => {
-    expect(200).toBe(200);
+  expect(200).toBe(200);
 });
