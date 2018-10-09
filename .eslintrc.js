@@ -5,7 +5,7 @@ module.exports = {
     'no-var': 'error', // optional, recommended when using es6+
     'no-unused-vars': 1, // recommended
     'arrow-spacing': ['error', { before: true, after: true }], // recommended
-    indent: ['error', 2],
+    // indent: ['error', 2],
     'comma-dangle': [
       'error',
       {
@@ -18,8 +18,7 @@ module.exports = {
     ],
 
     // options to emulate prettier setup
-    semi: ['error', 'never'],
-    'max-len': ['error', { code: 80 }],
+    semi: ['error', 'always'],
     'template-curly-spacing': ['error', 'always'],
     'arrow-parens': ['error', 'as-needed'],
 
