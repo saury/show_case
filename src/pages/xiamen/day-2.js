@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../../components/Header/index';
+import Layout from '../../components/layout';
 
 const img1 = require('../../images/xiamen/day2/1.jpg');
 const img2 = require('../../images/xiamen/day2/2.jpg');
@@ -9,8 +9,14 @@ const img4 = require('../../images/xiamen/day2/4.jpg');
 const img5 = require('../../images/xiamen/day2/5.jpg');
 
 const DayTwo = () => (
-  <div className="container">
-    <Header title="第二天" back="/xiamen/" />
+  <Layout
+    seo={{
+      title: '旅游-厦门',
+      description: '旅游-厦门',
+      keywords: '旅游 厦门',
+    }}
+    nav={{ title: '第二天', back: '/xiamen/' }}
+  >
     <div className="content">
       <h4>
         鼓浪屿：
@@ -80,7 +86,7 @@ const DayTwo = () => (
         （中山路）
       </small>
     </div>
-  </div>
+  </Layout>
 );
 
 export default DayTwo;

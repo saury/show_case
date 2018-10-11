@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../../components/Header/index';
+import Layout from '../../components/layout';
 
 const img1 = require('../../images/xiamen/day3/1.jpg');
 const img2 = require('../../images/xiamen/day3/2.jpg');
@@ -8,8 +8,14 @@ const img3 = require('../../images/xiamen/day3/3.jpg');
 const img4 = require('../../images/xiamen/day3/4.jpg');
 
 const DayThree = () => (
-  <div className="container">
-    <Header title="第三天" back="/xiamen/" />
+  <Layout
+    seo={{
+      title: '旅游-厦门',
+      description: '旅游-厦门',
+      keywords: '旅游 厦门',
+    }}
+    nav={{ title: '第三天', back: '/xiamen/' }}
+  >
     <div className="content">
       <p>
         『白城沙滩——厦门大学——沙坡尾——猫街——钟鼓索道——环岛路』这是你们的行程安排，我看了下，总体安排的还是不错的，我就不画蛇添足另提想法啦。
@@ -70,7 +76,7 @@ const DayThree = () => (
         除此之外，厦大旁边的南普陀不错，有赠香，可以拜一拜祈福，至于山，想必你也爬不动，那里的素斋不错，不知道你们索道坐单程还是往返，如果单程，终点就在南普陀，或许可以考虑晚饭吃素斋清清肠。
       </p>
     </div>
-  </div>
+  </Layout>
 );
 
 export default DayThree;

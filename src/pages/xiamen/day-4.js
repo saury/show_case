@@ -1,12 +1,18 @@
 import React from 'react';
 
-import Header from '../../components/Header/index';
+import Layout from '../../components/layout';
 
 const img1 = require('../../images/xiamen/qilou.jpg');
 
 const DayFour = () => (
-  <div className="container">
-    <Header title="第四天" back="/xiamen/" />
+  <Layout
+    seo={{
+      title: '旅游-厦门',
+      description: '旅游-厦门',
+      keywords: '旅游 厦门',
+    }}
+    nav={{ title: '第四天', back: '/xiamen/' }}
+  >
     <div className="content">
       <p>
         最后一天啦，返程的一天。想必昨天玩的很累睡到很晚才醒吧。退房的时候不要遗漏物品。
@@ -25,7 +31,7 @@ const DayFour = () => (
       </p>
       <p>火车上就吃吃睡睡玩玩手机看看书吧，到家记得给我消息。</p>
     </div>
-  </div>
+  </Layout>
 );
 
 export default DayFour;

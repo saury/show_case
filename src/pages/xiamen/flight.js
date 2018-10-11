@@ -1,11 +1,15 @@
 import React from 'react';
-// import Link from 'gatsby-link';
-
-import Header from '../../components/Header/index';
+import Layout from '../../components/layout';
 
 const FlightPage = () => (
-  <div className="container">
-    <Header title="飞行须知" back="/xiamen/" />
+  <Layout
+    seo={{
+      title: '旅游-厦门',
+      description: '旅游-厦门',
+      keywords: '旅游 厦门',
+    }}
+    nav={{ title: '飞行须知', back: '/xiamen/' }}
+  >
     <div className="content">
       <ol
         style={{
@@ -37,7 +41,7 @@ const FlightPage = () => (
         </li>
       </ol>
     </div>
-  </div>
+  </Layout>
 );
 
 export default FlightPage;

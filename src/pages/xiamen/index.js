@@ -1,37 +1,17 @@
 import React from 'react';
+import Layout from '../../components/layout';
 import Link from 'gatsby-link';
 
-import Header from '../../components/Header/index';
-
-// const currentDate = new Date();
-
-// const currentH = currentDate.getHours();
-// let welcomeText = '';
-
-// switch (true) {
-//   case currentH >= 18:
-//     welcomeText = '晚上好~';
-//     break;
-//   case currentH >= 12:
-//     welcomeText = '下午好~';
-//     break;
-//   case currentH >= 6:
-//     welcomeText = '上午好~';
-//     break;
-//   default:
-//     welcomeText = '凌晨好~';
-//     break;
-// }
-
 const IndexPage = () => (
-  <div>
-    <Header title="厦门游" back="/" />
-    {/* <footer className="footer">
-      尽管略显粗糙，但也是每每聊至你睡了，才开始这个项目。
-      <small>By Jin</small>
-    </footer> */}
+  <Layout
+    seo={{
+      title: '旅游-厦门',
+      description: '旅游-厦门',
+      keywords: '旅游 厦门',
+    }}
+    nav={{ title: '厦门游', back: '/' }}
+  >
     <div className="content">
-      {/* <p>{welcomeText}</p> */}
       <ul>
         <li>
           <Link to="/xiamen/checklist/">出行清单</Link>
@@ -59,7 +39,7 @@ const IndexPage = () => (
         </li>
       </ul>
     </div>
-  </div>
+  </Layout>
 );
 
 export default IndexPage;

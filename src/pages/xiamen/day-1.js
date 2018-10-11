@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import Header from '../../components/Header/index';
+import Layout from '../../components/layout';
 
 const map = require('../../images/xiamen/map.jpg');
 const img1 = require('../../images/xiamen/IMG_1687.jpeg');
@@ -9,8 +9,14 @@ const img2 = require('../../images/xiamen/IMG_1688.jpeg');
 const img3 = require('../../images/xiamen/timg.jpg');
 
 const DayOne = () => (
-  <div className="container">
-    <Header title="第一天" back="/xiamen/" />
+  <Layout
+    seo={{
+      title: '旅游-厦门',
+      description: '旅游-厦门',
+      keywords: '旅游 厦门',
+    }}
+    nav={{ title: '第一天', back: '/xiamen/' }}
+  >
     <div className="content">
       <p>
         上午6点的飞机，不误点的话午饭前就能到高崎机场，机场里可以拿份手绘的厦门地图，尽管用处不是特别大，也权当纪念了。
@@ -77,7 +83,7 @@ const DayOne = () => (
         </li>
       </ol>
     </div>
-  </div>
+  </Layout>
 );
 
 export default DayOne;

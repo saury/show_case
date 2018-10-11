@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../../components/Header/index';
+import Layout from '../../components/layout';
 const img1 = require('../../images/xiamen/eat/1.jpg');
 const img2 = require('../../images/xiamen/eat/2.jpg');
 const img3 = require('../../images/xiamen/eat/3.jpg');
@@ -13,8 +13,14 @@ const img9 = require('../../images/xiamen/eat/9.jpg');
 const img10 = require('../../images/xiamen/eat/10.jpg');
 
 const EatPage = () => (
-  <div className="container">
-    <Header title="有关吃什么" back="/xiamen/" />
+  <Layout
+    seo={{
+      title: '旅游-厦门',
+      description: '旅游-厦门',
+      keywords: '旅游 厦门',
+    }}
+    nav={{ title: '有关吃什么', back: '/xiamen/' }}
+  >
     <div className="content">
       <nav
         style={{
@@ -211,7 +217,7 @@ const EatPage = () => (
         </li>
       </ul>
     </div>
-  </div>
+  </Layout>
 );
 
 export default EatPage;

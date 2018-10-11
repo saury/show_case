@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import Header from '../../components/Header/index';
+import Layout from '../../components/layout';
 const windowGlobal = typeof window !== 'undefined' && window;
 
 let backList;
@@ -109,8 +108,14 @@ class NotifyBack extends Component {
     });
 
     return (
-      <div className="container">
-        <Header title="回程清单" back="/xiamen/" />
+      <Layout
+        seo={{
+          title: '旅游-厦门',
+          description: '旅游-厦门',
+          keywords: '旅游 厦门',
+        }}
+        nav={{ title: '回程清单', back: '/xiamen/' }}
+      >
         <div className="content">
           <p
             style={{
@@ -128,7 +133,7 @@ class NotifyBack extends Component {
             {list}
           </ul>
         </div>
-      </div>
+      </Layout>
     );
   }
 }

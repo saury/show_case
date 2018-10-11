@@ -1,56 +1,75 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-const Header = props => (
-  <div
-    className="header"
-    style={{
-      background: 'rebeccapurple',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        color: 'white',
-        textDecoration: 'none',
-        // padding: '1.45rem 1.0875rem',
-        height: '60px',
-        textAlign: 'center',
-        position: 'relative',
-      }}
-    >
-      {props.back && (
-        <small
-          style={{
-            position: 'absolute',
-            left: 0,
-            top: 0,
-            lineHeight: '60px',
-            paddingLeft: '24px',
-          }}
-        >
-          <Link
-            to={props.back}
-            style={{
-              color: 'white',
-              textDecoration: 'none',
-            }}
-          >
-            BACK
-          </Link>
-        </small>
-      )}
-      <h3
-        style={{
-          margin: 0,
-          lineHeight: '60px',
-        }}
-      >
-        {props.title}
-      </h3>
-    </div>
-  </div>
-);
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import ArrowBack from '@material-ui/icons/ArrowBackIos';
+import Home from '@material-ui/icons/Home';
 
-export default Header;
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+  flex: {
+    flexGrow: 1,
+  },
+  leftButton: {
+    marginLeft: -12,
+    marginRight: 20,
+  },
+};
+
+class MenuAppBar extends React.Component {
+  render () {
+    const { classes, title, back } = this.props;
+
+    return (
+      <div className={classes.root}>
+        <AppBar position="fixed">
+          <Toolbar>
+            {back ? (
+              <Link
+                to={back}
+                style={{
+                  color: 'white',
+                  textDecoration: 'none',
+                }}
+              >
+                <IconButton
+                  className={classes.leftButton}
+                  color="inherit"
+                  aria-label="Back"
+                >
+                  <ArrowBack />
+                </IconButton>
+              </Link>
+            ) : (
+              <IconButton
+                className={classes.leftButton}
+                color="inherit"
+                aria-label="Back"
+              >
+                <Home />
+              </IconButton>
+            )}
+            <Typography variant="h6" color="inherit" className={classes.flex}>
+              {title}
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </div>
+    );
+  }
+}
+
+MenuAppBar.propTypes = {
+  classes: PropTypes.object.isRequired,
+  title: PropTypes.string,
+  back: PropTypes.string,
+};
+
+export default withStyles(styles)(MenuAppBar);
