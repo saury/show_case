@@ -1,10 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: '厦门游',
+    title: `Jin's Github Page`,
+    siteUrl: `https://saury.github.io/show_case/`,
+    description: `Build with Blazing fast modern site generator for React —— Gatsby`,
   },
   pathPrefix: `/show_case`,
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
