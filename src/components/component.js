@@ -1,10 +1,10 @@
-// import 'antd/dist/antd.css';
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from '../components/Header/index';
 import { Layout as AntLayout, BackTop } from 'antd';
+
+import 'antd/dist/antd.css';
 
 const { Content } = AntLayout;
 
