@@ -9,6 +9,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
+      resolve: `@wapps/gatsby-plugin-material-ui`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-116200360-1',
