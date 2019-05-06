@@ -52,7 +52,7 @@ const IndexPage = () => (
       <List
         size="large"
         dataSource={data}
-        renderItem={(item) => (
+        renderItem={item => (
           <List.Item>
             <Link to={item.url}>{item.title}</Link>
           </List.Item>

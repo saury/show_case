@@ -32,7 +32,7 @@ class EatPage extends React.Component {
     });
   };
 
-  render() {
+  render () {
     return (
       <Layout
         seo={{
