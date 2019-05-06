@@ -2,6 +2,43 @@ import React from 'react';
 import Layout from '../../components/layout';
 import Link from 'gatsby-link';
 
+import { List } from 'antd';
+
+const data = [
+  {
+    url: '/xiamen/checklist',
+    title: '出行清单',
+  },
+  {
+    url: '/xiamen/flight',
+    title: '飞行须知',
+  },
+  {
+    url: '/xiamen/eat',
+    title: '提前知道，有关吃什么',
+  },
+  {
+    url: '/xiamen/day-1',
+    title: '第1天',
+  },
+  {
+    url: '/xiamen/day-2',
+    title: '第2天',
+  },
+  {
+    url: '/xiamen/day-3',
+    title: '第3天',
+  },
+  {
+    url: '/xiamen/day-4',
+    title: '第4天',
+  },
+  {
+    url: '/xiamen/checklist_back',
+    title: '回程清单',
+  },
+];
+
 const IndexPage = () => (
   <Layout
     seo={{
@@ -12,32 +49,15 @@ const IndexPage = () => (
     nav={{ title: '厦门游', back: '/' }}
   >
     <div className="content">
-      <ul>
-        <li>
-          <Link to="/xiamen/checklist/">出行清单</Link>
-        </li>
-        <li>
-          <Link to="/xiamen/flight/">飞行须知</Link>
-        </li>
-        <li>
-          <Link to="/xiamen/eat/">提前知道，有关吃什么</Link>
-        </li>
-        <li>
-          <Link to="/xiamen/day-1/">第1天</Link>
-        </li>
-        <li>
-          <Link to="/xiamen/day-2/">第2天</Link>
-        </li>
-        <li>
-          <Link to="/xiamen/day-3/">第3天</Link>
-        </li>
-        <li>
-          <Link to="/xiamen/day-4/">第4天</Link>
-        </li>
-        <li>
-          <Link to="/xiamen/checklist_back/">回程清单</Link>
-        </li>
-      </ul>
+      <List
+        size="large"
+        dataSource={data}
+        renderItem={(item) => (
+          <List.Item>
+            <Link to={item.url}>{item.title}</Link>
+          </List.Item>
+        )}
+      />
     </div>
   </Layout>
 );

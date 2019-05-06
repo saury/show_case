@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import Header from '../components/Header/index';
 import { Layout as AntLayout, BackTop } from 'antd';
 
+import 'minireset.css';
 import 'antd/dist/antd.css';
 
 const { Content } = AntLayout;

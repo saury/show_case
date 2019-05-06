@@ -29,6 +29,7 @@ export const Layout = styled(Component)`
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 0 5%;
     overflow-x: hidden;
     overflow-y: auto;
   }
